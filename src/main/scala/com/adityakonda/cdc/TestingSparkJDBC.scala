@@ -1,30 +1,19 @@
 package com.adityakonda.cdc
 
 import java.util.Properties
-import org.apache.spark.sql.hive.HiveContext
-import org.apache.spark.{SparkConf, SparkContext}
 
     /**
     * Created by Aditya Konda on 03/17/2018.
     */
 
-object TestingSparkJDBC {
+object TestingSparkJDBC extends SparkApp {
 
   def main(args: Array[String]): Unit = {
 
-    /*    SETTING UP SPARK CONFIGURATION   */
-    val conf = new SparkConf()
-    conf.setAppName("Aditya")
-    conf.setMaster("yarn-client")
-
-    val sc = new SparkContext(conf)
-
-    /*    SETTING UP HIVE CONTEXT   */
-    val hiveContext = new HiveContext(sc)
+    val hiveContext = getHiveContext(getClass.getName)
 
     def getConfig(value: String): String = {
       val configFile = "/home/cloudera/aditya/landing/connection.conf"
-      //val configFile = "C:\\Users\\Aditya.Konda\\Documents\\connection.conf"
       Utils.getConfig(configFile).get(value).get
     }
 

@@ -4,7 +4,7 @@
 		module="spark_changedatacapture_2.10"
 		revision="0.1"
 		status="integration"
-		publication="20180317144603"
+		publication="20180317153948"
 	>
 		<description>
 		Spark_ChangeDataCapture
