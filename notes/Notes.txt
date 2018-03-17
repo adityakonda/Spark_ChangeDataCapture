@@ -1,0 +1,10 @@
+import java.util.Properties
+
+val connectionProperties = new Properties()
+connectionProperties.put("user", "root")
+connectionProperties.put("password", "cloudera")
+
+val jdbcUrl = "jdbc:mysql://quickstart.cloudera:3306/retail_db?useSSL=false"
+
+val deptDF = sqlContext.read.jdbc(jdbcUrl,"departments",connectionProperties)
+deptDF.show()

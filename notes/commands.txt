@@ -1,0 +1,14 @@
+---------------------------------------------------------------------------
+***     Launching Spark - Submit     ***
+---------------------------------------------------------------------------
+
+spark-submit \
+--class com.adityakonda.cdc.TestingSparkJDBC \
+--jars /home/cloudera/aditya/landing/mysql-connector-java-5.1.6.jar \
+/home/cloudera/aditya/landing/spark_changedatacapture_2.10-0.1.jar
+
+---------------------------------------------------------------------------
+***     Launching Spark - Shell     ***
+---------------------------------------------------------------------------
+spark-shell \
+--jars /home/cloudera/aditya/landing/mysql-connector-java-5.1.6.jar

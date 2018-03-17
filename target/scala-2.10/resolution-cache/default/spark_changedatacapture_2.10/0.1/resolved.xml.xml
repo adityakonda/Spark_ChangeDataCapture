@@ -4,7 +4,7 @@
 		module="spark_changedatacapture_2.10"
 		revision="0.1"
 		status="integration"
-		publication="20180311231131"
+		publication="20180317144603"
 	>
 		<description>
 		Spark_ChangeDataCapture
@@ -33,5 +33,7 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.10.5" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.10.5" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.apache.spark" name="spark-core_2.10" rev="1.6.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-sql_2.10" rev="1.6.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-hive_2.10" rev="1.6.0" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
