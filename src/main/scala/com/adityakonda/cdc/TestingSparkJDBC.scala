@@ -12,22 +12,22 @@ object TestingSparkJDBC extends SparkApp {
 
     val hiveContext = getHiveContext(getClass.getName)
 
-    def getConfig(value: String): String = {
+    def getConfigValueOf(key: String): String = {
       val configFile = "/home/cloudera/aditya/landing/connection.conf"
-      Utils.getConfig(configFile).get(value).get
+      Utils.getConfig(configFile).get(key).get
     }
 
-    val jdbcHostname = getConfig("mysqlHostname")
-    val jdbcPort = getConfig("mysqlPort")
-    val jdbcDatabase = getConfig("mysqlDatabase")
-
-    // Create the MyYSQL JDBC URL without passing in the user and password parameters.
-    val jdbcUrl = s"jdbc:mysql://${jdbcHostname}:${jdbcPort}/${jdbcDatabase}?useSSL=false"
+    val jdbcHostname = getConfigValueOf("mysqlHostname")
+    val jdbcPort = getConfigValueOf("mysqlPort")
+    val jdbcDatabase = getConfigValueOf("mysqlDatabase")
 
     // Adding username & password
     val connectionProperties = new Properties()
-    connectionProperties.put("user", getConfig("mysqlUsername"))
-    connectionProperties.put("password", getConfig("mysqlPassword"))
+    connectionProperties.put("user", getConfigValueOf("mysqlUsername"))
+    connectionProperties.put("password", getConfigValueOf("mysqlPassword"))
+
+    // Create the MyYSQL JDBC URL without passing in the user and password parameters.
+    val jdbcUrl = s"jdbc:mysql://${jdbcHostname}:${jdbcPort}/${jdbcDatabase}?useSSL=false"
 
     val deptDF = hiveContext.read.jdbc(jdbcUrl,"departments",connectionProperties)
     deptDF.collect().foreach(print)

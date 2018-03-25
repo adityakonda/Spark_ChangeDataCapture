@@ -2,12 +2,18 @@
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingPurpose$delayedInit$body.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingPurpose$delayedInit$body.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingSparkJDBC_bck$$typecreator1$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingSparkJDBC_bck$$typecreator1$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\SparkApp.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\SparkApp.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\Utils$$anonfun$getConfig$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\Utils$$anonfun$getConfig$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingSparkJDBC_bck$StageTableStats$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingSparkJDBC_bck$StageTableStats$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\Utils$$anonfun$getConfig$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\Utils$$anonfun$getConfig$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingSparkJDBC_bck.class[0m
@@ -16,6 +22,14 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingSparkJDBC$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingSparkJDBC_bck$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingSparkJDBC_bck$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\Utils$$anonfun$castAllTypedColumnsTo$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\Utils$$anonfun$castAllTypedColumnsTo$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingPurpose.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingPurpose.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingPurpose$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingPurpose$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\Utils$$anonfun$castAllTypedColumnsTo$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\Utils$$anonfun$castAllTypedColumnsTo$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingSparkJDBC$$anonfun$main$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingSparkJDBC$$anonfun$main$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\Utils$.class[0m
@@ -24,6 +38,10 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\Utils.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingSparkJDBC.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingSparkJDBC.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingSparkJDBC_bck$$anonfun$main$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingSparkJDBC_bck$$anonfun$main$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	com\adityakonda\cdc\TestingSparkJDBC_bck$StageTableStats.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com\adityakonda\cdc\TestingSparkJDBC_bck$StageTableStats.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	com[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\Aditya.Konda\IdeaProjects\Spark_ChangeDataCapture\target\scala-2.10\classes\com[0m
 [0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m

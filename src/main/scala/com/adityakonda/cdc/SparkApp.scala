@@ -16,7 +16,6 @@ class SparkApp {
 
     /*    SETTING UP HIVE CONTEXT   */
     new HiveContext(sc)
-
   }
 
 }

@@ -1,4 +1,6 @@
 import java.util.Properties
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.DataFrame
 
 val connectionProperties = new Properties()
 connectionProperties.put("user", "root")
@@ -6,5 +8,33 @@ connectionProperties.put("password", "cloudera")
 
 val jdbcUrl = "jdbc:mysql://quickstart.cloudera:3306/retail_db?useSSL=false"
 
-val deptDF = sqlContext.read.jdbc(jdbcUrl,"departments",connectionProperties)
-deptDF.show()
+val ordersDF = sqlContext.read.jdbc(jdbcUrl,"orders",connectionProperties)
+ordersDF.show()
+
+def castAllTypedColumnsTo(df: DataFrame, sourceType: DataType, targetType: DataType) = {
+df.schema.filter(_.dataType == sourceType).foldLeft(df) {
+case (acc, col) => acc.withColumn(col.name, df(col.name).cast(targetType))
+}
+}
+
+val changedDF = castAllTypedColumnsTo(ordersDF, TimestampType, StringType)
+
+
+------
+
+val schemaQuery = "(SELECT table_name FROM information_schema.tables WHERE table_type = 'base table' AND table_schema = 'retail_db') as schema_tables"
+
+val jdbcSrcSchemaTableDF = sqlContext.read.jdbc(jdbcUrl,schemaQuery,connectionProperties)
+
+val jdbcSrcSchemaTables = jdbcSrcSchemaTableDF.map(record => record.getString(0)).collect()
+
+
+-=----
+
+case class StageTableStats(sourceTable: String, targetTable: String, etlProcessingTime: Option[Long], recordCount: Long)
+
+//initialize an empty DataFrame
+
+var etlStatistics = sqlContext.createDataFrame(Seq(StageTableStats(sourceTable = "sourceTable",targetTable = "targetTable",etlProcessingTime = None, 0)))
+
+etlStatistics = etlStatistics.filter("sourceTable <> 'sourceTable'")
