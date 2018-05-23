@@ -5,6 +5,16 @@ import org.apache.spark.sql.hive.HiveContext
 
 class SparkApp {
 
+  def getSparkContext(appName: String): SparkContext={
+
+    /*    SETTING UP SPARK CONFIGURATION   */
+    val conf = new SparkConf()
+    conf.setAppName(appName)
+    conf.setMaster("yarn-client")
+
+    new SparkContext(conf)
+  }
+
   def getHiveContext(appName: String): HiveContext ={
 
     /*    SETTING UP SPARK CONFIGURATION   */
