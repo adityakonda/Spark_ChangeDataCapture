@@ -4,6 +4,8 @@ import java.util.{Calendar, Properties}
 
 import org.apache.spark.sql.{DataFrame, functions}
 
+case  class StageTableStats(source_table: String, target_table: String, etl_processing_time: Option[Long], record_count: Long)
+
 object SparkCDC extends SparkApp {
 
   val hiveContext = getHiveContext(getClass().toString)
@@ -61,5 +63,17 @@ object SparkCDC extends SparkApp {
       .saveAsTable(s"stage.$tableName")
 
     jdbcTableWithProcTime
+  }
+
+  //TRACK STATISTICS FOR ETL
+
+  //Initialize an empty DataFrame
+  var etlStatistics = hiveContext.createDataFrame(Seq(StageTableStats("source_table","target_table",None,0)))
+  etlStatistics = etlStatistics.filter("source_table <> 'source_table'")
+
+  def compileStats(srcTableName: String, stagedDF: DataFrame, statsDF: DataFrame = etlStatistics)={
+
+    val etlRecordCount = stagedDF.count()
+    //val etlProcessingTime = if(etlRecordCount > 0) Option (stagedDF.agg(max("etlProcessing_time")).collect()(0))
   }
 }
