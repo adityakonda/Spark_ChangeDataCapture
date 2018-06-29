@@ -2,22 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8530457-de86-45ad-82fa-daa14ae7deca" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/scala/com/adityakonda/cdc/Test.scala" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/adityakonda/cdc/SparkCDC.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/adityakonda/cdc/SparkCDC.scala" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/adityakonda/cdc/Utils.scala" afterPath="$PROJECT_DIR$/src/main/scala/com/adityakonda/cdc/Utils.scala" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/SparkApp.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/SparkApp.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingPurpose$$anonfun$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingPurpose$$anonfun$1.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingPurpose$.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingPurpose$.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingPurpose$delayedInit$body.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingPurpose$delayedInit$body.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingPurpose.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingPurpose.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingSparkJDBC.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingSparkJDBC.class" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingSparkJDBC_bck$$anonfun$main$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingSparkJDBC_bck$$typecreator1$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingSparkJDBC_bck$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingSparkJDBC_bck$StageTableStats$.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingSparkJDBC_bck$StageTableStats.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/TestingSparkJDBC_bck.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/Utils$$anonfun$getTableIntFields$1.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/Utils$$anonfun$getTableIntFields$1.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/Utils$$anonfun$getTableIntFields$2.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/Utils$$anonfun$getTableIntFields$2.class" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/Utils$.class" afterPath="$PROJECT_DIR$/target/scala-2.10/classes/com/adityakonda/cdc/Utils$.class" />
@@ -538,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527042101517</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added all the necessary methods. &#10;&#10;stageFromJdbc() - saving data with partitions is not working.">
+      <created>1530282298330</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1530282298330</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -651,7 +649,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="Added SparkCDC Object Class&#10;&#10;stageFromJdbc()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added SparkCDC Object Class&#10;&#10;stageFromJdbc()" />
+    <MESSAGE value="Added all the necessary methods. &#10;&#10;stageFromJdbc() - saving data with partitions is not working." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all the necessary methods. &#10;&#10;stageFromJdbc() - saving data with partitions is not working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
